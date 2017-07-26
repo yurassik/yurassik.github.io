@@ -1,0 +1,36 @@
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+.consoleWrapper {
+	background: black;
+	height: 100%;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+.consoleViewport {
+	color: #66ff33;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.consoleCursor {
+	font-weight: bold;
+}
+
+
+.blink {
+  animation: blink-animation .7s infinite;
+  -webkit-animation: blink-animation .7s infinite;
+}
+@keyframes blink-animation {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-webkit-keyframes blink-animation {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}

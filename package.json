@@ -1,0 +1,22 @@
+{
+  "name": "yurassiklab",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurassik/yurassik.github.io.git"
+  },
+  "author": "yurassik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yurassik/yurassik.github.io/issues"
+  },
+  "homepage": "https://github.com/yurassik/yurassik.github.io#readme",
+  "devDependencies": {
+    "express": "^4.15.3"
+  }
+}
