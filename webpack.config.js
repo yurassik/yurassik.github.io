@@ -9,15 +9,13 @@ const plugins = [
   }),
 ];
 
-console.log(process.env.NODE_ENV);
-
 if (process.env.NODE_ENV === "production") {
   plugins.push(
     new CopyPlugin({
       patterns: [
         {
           from: path.resolve(__dirname, "cv"),
-          to: path.resolve(__dirname, "public/cv"),
+          to: path.resolve(__dirname, "docs/cv"),
         },
       ],
     })
@@ -28,7 +26,7 @@ module.exports = {
   plugins,
   entry: path.resolve(__dirname, "src"),
   output: {
-    path: path.resolve(__dirname, "public"),
+    path: path.resolve(__dirname, "docs"),
     filename: "[name].js",
   },
   module: {
