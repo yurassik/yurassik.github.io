@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "esNext",
+    "target": "es5",
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "removeComments": false,
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["es2016", "es2017.object", "dom"],
+    "importHelpers": true,
+    "baseUrl": "./",
+  },
+}

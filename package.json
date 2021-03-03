@@ -4,19 +4,41 @@
   "description": "website",
   "main": "index.js",
   "scripts": {
+    "start": "NODE_ENV=development webpack serve",
+    "build": "NODE_ENV=production webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yurassik/yurassik.github.io.git"
   },
-  "author": "yurassik",
+  "author": "Yurii Pavlenko <yurokman@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yurassik/yurassik.github.io/issues"
   },
   "homepage": "https://github.com/yurassik/yurassik.github.io#readme",
   "devDependencies": {
-    "express": "^4.15.3"
+    "@babel/core": "^7.13.8",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "@types/react-router-dom": "^5.1.7",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.1.1",
+    "express": "^4.15.3",
+    "formalibre": "https://github.com/yurassik/formalibre.git",
+    "html-webpack-plugin": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.2.2",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
   }
 }

@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.1rem;
+  color: #2f2f2f;
+  font-family: 'Barlow', sans-serif;
+}
+
+body {
+}
+
+h1, .h1 {
+  font-size: 2rem;
+}
+
+h2, .h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  color: silver;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 480px) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+#header {
+  height: 25rem;
+  overflow: hidden;
+  background: url(../img/avatar.jpg) top center/cover;
+  position: relative;
+}
+
+@media (min-width: 2000px) {
+  #header {
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-color: gray;
+  }
+}
+
+.whois {
+  position: absolute;
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  padding: 1rem;
+  color: white;
+  background: rgba(0,0,0,.5);
+}
+
+@media (min-width: 768px) {
+  .whois {
+    top: 0;
+    width: auto;
+  }
+}
+
+@supports(display: flex) {
+  .whois {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.avatar_print {
+  display: none;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+}
+
+@media print {
+  html {
+    font-size: .8em
+  }
+  #header {
+    display: none;
+  }
+
+  a[href^=http]:after {content:" <" attr(href) ">";}
+
+  .whois {
+    position: initial;
+    text-align: left;
+    width: 100%;
+  }
+
+  .whois__title {
+    float: left;
+  }
+
+  .avatar_print {
+    display: block;
+    float: left;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.content__about {
+  background: rgba(0,0,0,.5);
+  padding: 1rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.about-section {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+}
+
+
+@supports (display: flex) {
+  .content__about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  @media print {
+    .content__about {
+      flex-wrap: nowrap;
+      padding: 0;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .content__about {
+      justify-content: flex-end;
+    }
+  }
+  
+  .about-section {
+    display: block;
+    flex-shrink: 0;
+  }
+
+}
+
+.content__about a {
+  color: white;
+}
+
+
+.about-section__header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.year {
+  font-size: 1.6rem;
+}
+
+.technologies {
+  line-height: 1.5;
+}
+
+.technology {
+  font-size: 1.4rem;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+
+
+.row__col {
+
+}
+
+.container {
+  max-width: 1024px;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.block {
+  margin-bottom: 2rem;
+}
