@@ -26,7 +26,7 @@
     "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^7.0.0",
     "css-loader": "^5.1.1",
-    "express": "^4.15.3",
+    "express": "^4.17.3",
     "formalibre": "https://github.com/yurassik/formalibre.git",
     "html-webpack-plugin": "^5.2.0",
     "style-loader": "^2.0.0",
